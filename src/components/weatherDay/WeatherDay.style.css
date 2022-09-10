@@ -1,0 +1,44 @@
+.today__item {
+    /* flex: 0 0 25%; */
+    flex: 1;
+    padding: 24px;
+    height: 10rem;
+    max-width: 12rem;
+    min-height: 10rem;
+    border-radius: 8px;
+    /* scroll-snap-align: start; */
+    background-color: #2C3246;
+    color: #50ABEA;
+    font-family: 'Nunito', sans-serif;
+    display: flex;
+    flex-direction: column;
+}
+
+.today .today__item:first-child {
+    color: #2C3246;
+    background-color: #50ABEA;
+    /* box-shadow: var(--box-shadow-lg); */
+}
+
+.today_item__weather {
+    display: flex;
+    flex: 1;
+}
+
+.today_item__weather img {
+    margin: auto;
+    width: 60px;
+}
+
+.today_item__weather div {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    justify-content: center;
+    align-items: end;
+    font-size: 1.5em;
+}
+
+.today_item__weather > div > p:first-child{
+    font-weight: 700;
+}

@@ -1,0 +1,85 @@
+/*  */
+.app-title {
+    font-family: 'Maven Pro', sans-serif;
+    font-size: 1.5em;
+    font-weight: 200;
+}
+
+.app-panel {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    background-color: var(--color-wall-secondary);
+    padding: 1.5em;
+}
+
+.panel-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: .5em;
+}
+
+/* Details */
+
+.details {
+    flex: 1;
+    display: grid;
+    gap: 1em;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+}
+
+.details__item {
+    display: flex;
+    background-color: var(--color-white);
+    padding: .8em;
+    flex-direction: column;
+    border-radius: 8px;
+    box-shadow: var(--box-shadow-sm);
+    gap: .3em;
+}
+
+.details__item > p {
+    font-size: .85em;
+    font-weight: 400;
+    font-family: 'Nunito', sans-serif;
+}
+
+.details__item > div {
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.details__item > div > p{
+    font-size: 3em;
+    font-weight: 800;
+    font-family: 'Nunito', sans-serif;
+    margin-bottom: .5em;
+}
+
+.details__item > div > p > span{
+    font-size: .7em;
+    font-weight: 200;
+    font-family: 'Nunito', sans-serif;
+    margin-left: .3em;
+}
+
+/* Today */
+.today {
+    display: flex;
+    /* width: 70vw; */
+    width: 72.5vw;
+    /* overflow-x: scroll; */
+    /* flex: 1; */
+    /* scroll-snap-type: x mandatory; */
+    /* scroll-padding: 24px; */
+    border-radius: 8px;
+    padding-bottom: .5em;
+    gap: 12px;
+    /* overflow-x: ; */
+    overflow-y: auto;
+}

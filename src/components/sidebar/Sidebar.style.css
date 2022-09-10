@@ -1,0 +1,111 @@
+.app-sidebar {
+    display: flex;
+    flex-direction: column;
+    width: 23vw;
+    min-height: 100vh;
+    /* background-color: var(--color-primary); */
+    background-image: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);
+}
+
+.location {
+    display: flex;
+    justify-content: space-between;
+    padding: 1.5rem;
+    gap: 1em;
+}
+
+.search {
+    display: flex;
+    position: relative;
+    align-items: center;
+    flex: 1;
+}
+
+.search > svg{
+    position: absolute;
+    right: 7px;
+    width: 14px;
+    stroke-width: 1px;
+}
+
+.location__search {
+    flex: 1;
+    height: 30px;
+    border: 0px;
+    border-radius: 8px;
+    padding: .5em .6em;
+    background-color: #ffffff80;
+    backdrop-filter: blur(8px);
+    outline: none;
+    color: #252525;
+    padding-right: 26px;
+}
+
+.location__gps {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff80;
+    border: 0px;
+    height: 30px;
+    width: 30px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.location__gps > img {
+    width: 18px;
+    height: 18px;
+}
+
+.weather {
+    display: flex;
+    flex: 1;
+    padding: 0 1.5rem;
+}
+
+.weather-pic {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #0c161823;
+    backdrop-filter: blur(8px);
+    border-radius: 1em;
+    box-shadow: var(--box-shadow-lg);
+}
+
+.weather-pic h1 {
+    font-size: 3.8em;
+    font-weight: 700;
+    font-family: 'Nunito', sans-serif;
+}
+
+.weather-pic h3 {
+    font-size: 1.5em;
+    font-weight: 500;
+    font-family: 'Nunito', sans-serif;
+}
+
+.weather-pic img {
+    margin: 3.5rem auto;
+}
+
+.location.end {
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    font-family: 'Nunito', sans-serif;
+    font-size: 14px;
+}
+.location.end p:last-child {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: .4em;
+}
+.location.end p:last-child > svg {
+    width: 12px;
+    stroke-width: 1.5px;
+}
