@@ -62,7 +62,7 @@ const WeatherProvider = ({ children }) => {
                 console.info('RequestForecast: SUCCESS');
                 setforecast(result.daily)
             })
-            .catch(err => console.error(err))
+            .catch(err => {console.error(err); console.info('RequestForecast: FAILED');})
     }
 
     return <context.Provider value={{ weather, forecast, requestForLocation, requestForCity, setFieldsWeather }}>{children}</context.Provider>;
