@@ -21,11 +21,31 @@
     flex: 1;
 }
 
-.search > svg{
+.btn-search {
     position: absolute;
-    right: 7px;
+    right: 0px;
+    width: 34px;
+    height: 100%;
+    outline: none;
+    background-color: transparent;
+    border: 0px;
+    border-radius: 0 8.3px 8.3px 0;
+    cursor: pointer;
+    transition: background-color .15s ease-out;
+}
+.btn-search:hover {
+    background-color: #45d3ad;
+}
+
+.btn-search:hover > svg {
+    color: #FFF;
+    stroke-width: 2px;
+}
+
+.btn-search > svg{
     width: 14px;
-    stroke-width: 1px;
+    stroke-width: 2px;
+    color: #4a4d57;
 }
 
 .location__search {
@@ -38,7 +58,8 @@
     backdrop-filter: blur(8px);
     outline: none;
     color: #252525;
-    padding-right: 26px;
+    padding-right: 34px;
+    font-family: 'Nunito', sans-serif;
 }
 
 .location__gps {

@@ -175,5 +175,29 @@
     .today {
         width: 100% !important;
     }
-   
+
+
+    /* SIDEBAR */
+    .search {
+        height: 3rem;
+    }
+    .location__search {
+        height: 100% !important;
+        font-size: 1.2rem;
+        padding-right: 3rem !important;
+    }
+    .btn-search {
+        width: 3rem !important;
+    }
+    .btn-search > svg {
+        width: 1.1rem !important;
+    }
+    .location__gps {
+        width: 3rem !important;
+        height: 3rem !important;
+    }
+    .location__gps  > img {
+        width: 1.5rem !important;
+        height: 1.5rem !important;
+    }
 }

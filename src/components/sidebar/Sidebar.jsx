@@ -47,7 +47,9 @@ const Sidebar = () => {
                         onChange={e => setFieldSearch(e.target.value)}
                         onKeyDown={handlerSearch}
                     />
-                    <Search />
+                    <button className='btn-search'>
+                        <Search />
+                    </button>
                 </div>
                 <button className="location__gps" title='Ubicación actual' onClick={handlerGPS}>
                     <img src={gps ? locationON : locationOFF} alt="q" />
@@ -57,12 +59,12 @@ const Sidebar = () => {
                 <div className="weather-pic">
                     <img src={cloudy} alt="" />
                     <h1>{!weather.main ? <Skeleton /> : Math.round(weather.main.temp)}°C</h1>
-                    <h3>{!weather.weather ? <Skeleton /> :upperCase(weather.weather[0].description)}</h3>
+                    <h3>{!weather.weather ? <Skeleton /> : upperCase(weather.weather[0].description)}</h3>
                 </div>
             </div>
             <div className="location end">
                 <p>Hoy &#183; Sabado, 27 Agosto</p>
-                <p> <MapPin /> {!weather ? <Skeleton /> :weather.name} </p>
+                <p> <MapPin /> {!weather ? <Skeleton /> : weather.name} </p>
             </div>
         </section>
     )
