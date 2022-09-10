@@ -17,7 +17,7 @@ const WeatherProvider = ({ children }) => {
                 () => {
                     fetch(URL_IPINFO) //IP
                         .then(result => result.json())
-                        .then(result => requestForCity(result.city))
+                        .then(result => {requestForCity(result.city); console.info('IP_INFO: SUCCESS');})
                         .catch(err => alert('IP-ERROR:' + err))
                 });
         }
@@ -56,7 +56,7 @@ const WeatherProvider = ({ children }) => {
     }
 
     const requestForecast = (coord) => {
-        fetch(`http://api.openweathermap.org/data/3.0/onecall?lat=${coord.lat}&lon=${coord.lon}&lang=sp&units=metric&appid=${TK_OPENWEATHER}`)
+        fetch(`https://api.openweathermap.org/data/3.0/onecall?lat=${coord.lat}&lon=${coord.lon}&lang=sp&units=metric&appid=${TK_OPENWEATHER}`)
             .then(result => result.json())
             .then(result => { 
                 console.info('RequestForecast: SUCCESS');
